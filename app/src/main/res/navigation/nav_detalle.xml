@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sucursalesFragment">
+
+    <fragment
+        android:id="@+id/sucursalesFragment"
+        android:name="com.andres.pasaportecafeovalle.view.fragment.cliente.reseñas.ResenasFragment"
+        android:label="Sucursales">
+
+        <action
+            android:id="@+id/action_sucursalesFragment_to_detalleSucursalFragment"
+            app:destination="@id/detalleSucursalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleSucursalFragment"
+        android:name="com.andres.pasaportecafeovalle.view.fragment.cliente.reseñas.DetalleSucursalFragment"
+        android:label="Detalle Sucursal" />
+</navigation>
